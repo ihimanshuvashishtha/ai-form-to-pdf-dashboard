@@ -36,16 +36,17 @@ Follow these steps to initialize and run the portfolio project locally.
 
 1. Clone or download the repository.
 2. Install the necessary project dependencies:
+
    ```bash
    npm install
    ```
-
 3. Set up the local environment variables. Duplicate the `.env.example` file to create your own `.env.local`:
+
    ```bash
    cp .env.example .env.local
    ```
-
 4. Run the local development server:
+
    ```bash
    npm run dev
    ```
@@ -64,11 +65,3 @@ You can experience the authenticated dashboard routes immediately using the foll
 - **Login Password**: `password123`
 
 ---
-
-## Upwork Portfolio Summary
-
-### Project Title
-Full-Stack Next.js 14 & OpenAI Client Report Generator Dashboard
-
-### Description
-Developed a high-fidelity, production-grade Next.js App Router workspace for dynamic customer management. Includes full data validation using Zod, secure AI text optimization with serverless Next.js server actions, robust form auto-saving fallback layer, and client-side paginated PDF output. Built specifically to demonstrate full-stack capabilities to enterprise clients.
