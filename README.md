@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Form to PDF Generator Dashboard
+
+An enterprise-grade, beautifully styled, full-stack Next.js 14 App Router portfolio project that enables dynamic customer data capture, professional AI-powered text optimizations, robust draft persistence, and paginated client PDF exporting.
+
+## Project Overview
+
+This dashboard allows agencies and consultants to digitize customer acquisition forms, improve content via an inline AI Assistant, save records to Supabase, and download elegantly formatted client PDF reports.
+
+## Features
+
+- **Dynamic Form Capture**: Capture customer scope, timeline, and budget parameters with fully validated fields using React Hook Form & Zod.
+- **AI-Powered Optimization**: Leverage OpenAI on the fly to rewrite descriptions, enhance requirements, and synthesize executive summaries.
+- **Sleek PDF Exporting**: Instantly render highly customized paginated PDFs directly from submitted client files using `jspdf`.
+- **LocalStorage Auto-Saving**: Preserves form entries automatically to prevent loss upon refresh or navigational changes.
+- **Advanced Dashboard**: Track total registered forms, download PDFs, view, filter, edit, and delete records seamlessly.
+
+## Tech Stack
+
+- **Core**: Next.js 14 (App Router) & TypeScript
+- **Style**: Tailwind CSS
+- **Data Layers**: Supabase PostgreSQL & Local Hybrid Fallback Cache
+- **Validation**: Zod
+- **AI Utilities**: OpenAI API (Server-Side Server Actions)
+- **Document Exporting**: jsPDF
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to initialize and run the portfolio project locally.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js >= 18.17.0
+- npm >= 9.0.0
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone or download the repository.
+2. Install the necessary project dependencies:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Set up the local environment variables. Duplicate the `.env.example` file to create your own `.env.local`:
+   ```bash
+   cp .env.example .env.local
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Run the local development server:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open [http://localhost:3000](http://localhost:3000) with your browser to experience the landing page and dashboard.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Database Setup (Supabase)
 
-## Deploy on Vercel
+To link with a live instance, copy and run the schema SQL located inside `/supabase/schema.sql` within your Supabase project's SQL editor. Optionally, use `/supabase/seed.sql` to populate sample data.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Demo Credentials
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You can experience the authenticated dashboard routes immediately using the following fallback demo credentials:
+
+- **Login Email**: `demo@portfolio.com`
+- **Login Password**: `password123`
+
+---
+
+## Upwork Portfolio Summary
+
+### Project Title
+Full-Stack Next.js 14 & OpenAI Client Report Generator Dashboard
+
+### Description
+Developed a high-fidelity, production-grade Next.js App Router workspace for dynamic customer management. Includes full data validation using Zod, secure AI text optimization with serverless Next.js server actions, robust form auto-saving fallback layer, and client-side paginated PDF output. Built specifically to demonstrate full-stack capabilities to enterprise clients.
